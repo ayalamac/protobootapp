@@ -7,10 +7,11 @@ Esta es una aplicación de demostración en Java que muestra un punto de conexi�
 
 | Commit ID  | Tipo     | Descripción                                               |
 |------------|----------|-----------------------------------------------------------|
-| **e596df0**    | mix      | Se agregaron varios cambios a la base de código           |
-| **bc637cb**    | docs     | Se agregó documentación detallada para cada método        |
-| **e60be6d**    | refactor | Se refactorizaron los nombres de los métodos              |
-| **18b9490**    | feat     | Se agregó configuración explícita del puerto              |
+| **74086bd**    | docs      | Add basic README file to introduce the project           |
+| **e596df0**    | mix      | Add several changes to code base                          |
+| **bc637cb**    | docs     | add detailed documentation for each method               |
+| **e60be6d**    | refactor | Rename methods to use more descriptive names             |
+| **18b9490**    | feat     | Add explicit port configuration                           |
 
 ## Características
 - Tres endpoints `/hola`, `/cuadrado` y `/cubo`, con las funcionalidades del app
