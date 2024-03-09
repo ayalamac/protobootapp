@@ -28,24 +28,24 @@ class HttpRequestTest {
     @Test
     void GetCuadradoEndpoint_WhenIsCalledWithoutNumber_ShouldReturnDefaultSquare() {
         String response = restTemplate.getForObject("http://localhost:" + port + "/cuadrado", String.class);
-        assertThat(response).isEqualTo("El cuadrado de 0.0 es 0.0");
+        assertThat(response).matches("El cuadrado de 0[,.]0 es 0[,.]0");
     }
 
     @Test
     void GetCuadradoEndpoint_WhenIsCalledWithNumber_ShouldReturnSquareOfNumber() {
         String response = restTemplate.getForObject("http://localhost:" + port + "/cuadrado?numero=3", String.class);
-        assertThat(response).isEqualTo("El cuadrado de 3.0 es 9.0");
+        assertThat(response).matches("El cuadrado de 3[,.]0 es 9[,.]0");
     }
 
     @Test
     void GetCuboEndpoint_WhenIsCalledWithoutNumber_ShouldReturnDefaultCube() {
         String response = restTemplate.getForObject("http://localhost:" + port + "/cubo", String.class);
-        assertThat(response).isEqualTo("El cubo de 0.0 es 0.0");
+        assertThat(response).matches("El cubo de 0[,.]0 es 0[,.]0");
     }
 
     @Test
     void GetCuboEndpoint_WhenIsCalledWithNumber_ShouldReturnCubeOfNumber() {
         String response = restTemplate.getForObject("http://localhost:" + port + "/cubo?numero=3", String.class);
-        assertThat(response).isEqualTo("El cubo de 3.0 es 27.0");
+        assertThat(response).matches("El cubo de 3[,.]0 es 27[,.]0");
     }
 }

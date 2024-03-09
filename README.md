@@ -5,15 +5,18 @@ Esta es una aplicación de demostración en Java que muestra un punto de conexi�
 
 ## Registro de cambios después del *fork* al proyecto original
 
-| Commit ID  | Tipo     | Descripción                                               |
-|------------|----------|-----------------------------------------------------------|
+| Commit ID   | Tipo     | Descripción                                               |
+|-------------|----------|-----------------------------------------------------------|
+| **4cddcd5** | test | Update assertions to ignore localization |
+| **4e45a18** | docs | Update README, adding Dependencies and Build steps included in POM file |
 | **04d56be** | ci | Update table start line number and fix previous auto-update in README |
 | **78e28bc** | ci | Change pipeline to automatically update the README file |
-| **74086bd**    | docs      | Add basic README file to introduce the project           |
-| **e596df0**    | mix      | Add several changes to code base                          |
-| **bc637cb**    | docs     | add detailed documentation for each method               |
-| **e60be6d**    | refactor | Rename methods to use more descriptive names             |
-| **18b9490**    | feat     | Add explicit port configuration                           |
+| **544900c** | docs | Update the changelog to be based on commits' titles |
+| **74086bd** | docs | Add basic README file to introduce the project |
+| **e596df0** | mix | Add several changes to code base |
+| **bc637cb** | docs | add detailed documentation for each method |
+| **e60be6d** | refactor | Rename methods to use more descriptive names |
+| **18b9490** | feat | Add explicit port configuration |
 
 ## Características
 - Tres endpoints `/hola`, `/cuadrado` y `/cubo`, con las funcionalidades del app
