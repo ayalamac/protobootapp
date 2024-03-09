@@ -28,6 +28,32 @@ Esta es una aplicación de demostración en Java que muestra un punto de conexi�
 1. Ejecutar la aplicación: En tu IDE haz *clic* en el ícono de ejecutar. En la mayoría de IDEs, `CTRL + F5` también ejecutan la aplicación
 2. Abrir el navegador y navegar a [http://localhost:8081](http://localhost:8081) o, el puerto que esté definido en la propiedad `server.port` del archivo `src/main/resources/application.properties`
 
+## Configuración del Proyecto - POM.xml
+
+El archivo `pom.xml` es el núcleo de cualquier proyecto Maven. Incluye los detalles de configuración sobre el proyecto y sus dependencias.
+
+### Dependencias
+
+La sección de dependencias en el archivo `pom.xml` es donde especificamos las bibliotecas externas que nuestro proyecto necesita. Cada dependencia se especifica con su `groupId`, `artifactId` y `version`. Maven descarga y vincula automáticamente estas bibliotecas desde el Repositorio Central de Maven.
+
+Las dependencias en este proyecto son:
+
+- `spring-boot-starter-web`: Proporciona todas las bibliotecas necesarias para desarrollar aplicaciones web.
+- `spring-boot-starter-actuator`: Proporciona características de producción listas para usar, como métricas y monitoreo de la salud de la aplicación.
+- `spring-boot-starter-test`: Proporciona las bibliotecas necesarias para probar la aplicación.
+
+### Herramientas y Pasos de Construcción
+
+En la sección de construcción, definimos los plugins que se utilizarán durante el ciclo de vida de construcción de Maven. Algunos de los plugins utilizados en este proyecto son:
+
+- `maven-checkstyle-plugin`: Realiza la validación de estilo de código utilizando la configuración especificada en `google_checks.xml`.
+- `jacoco-maven-plugin`: Proporciona la funcionalidad de cobertura de código. Configurado para fallar si la cobertura de código es menor al 70%.
+- `spotbugs-maven-plugin` y `findsecbugs-plugin`: Realizan análisis estático de código para encontrar posibles errores y vulnerabilidades de seguridad.
+- `maven-pmd-plugin`: Realiza análisis de código para encontrar posibles problemas como código muerto, código duplicado, convenciones de nomenclatura, etc.
+- `spring-boot-maven-plugin`: Proporciona funcionalidades para construir y ejecutar aplicaciones Spring Boot.
+
+Para más detalles, por favor refiérase al archivo `pom.xml` en la raíz del proyecto.
+
 ## Licencia
 Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
 
