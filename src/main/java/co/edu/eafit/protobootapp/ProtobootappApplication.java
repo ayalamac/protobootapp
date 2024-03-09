@@ -37,7 +37,7 @@ public class ProtobootappApplication {
      * @return El mensaje de saludo.
      */
     @GetMapping("/hola")
-    public String hola(@RequestParam(value = "nombre", defaultValue = "Mundo") String nombre) {
+    public String saludar(@RequestParam(value = "nombre", defaultValue = "Mundo") String nombre) {
         return String.format("Hola %s!", nombre);
     }
     
@@ -49,7 +49,7 @@ public class ProtobootappApplication {
      * @return El cuadrado del número dado.
      */
     @GetMapping("/cuadrado")
-    public String cuadrado(@RequestParam(value = "numero", defaultValue = "0") Double numero) {
+    public String getCuadrado(@RequestParam(value = "numero", defaultValue = "0") Double numero) {
         this.calculadora = new Calculadora();
         double resultado = this.calculadora.calcularCuadrado(numero);
         return String.format("El cuadrado de %.1f es %.1f", numero, resultado);
@@ -63,7 +63,7 @@ public class ProtobootappApplication {
      * @return El cubo del número dado.
      */
     @GetMapping("/cubo")
-    public String cubo(@RequestParam(value = "numero", defaultValue = "0") Double numero) {
+    public String getCubo(@RequestParam(value = "numero", defaultValue = "0") Double numero) {
         this.calculadora = new Calculadora();
         double resultado = this.calculadora.calcularCubo(numero);
         return String.format("El cubo de %.1f es %.1f", numero, resultado);
