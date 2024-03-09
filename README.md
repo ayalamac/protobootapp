@@ -7,6 +7,7 @@ Esta es una aplicación de demostración en Java que muestra un punto de conexi�
 
 | Commit ID   | Tipo     | Descripción                                               |
 |-------------|----------|-----------------------------------------------------------|
+| **4430d84** | test | Revert changes in failing tests |
 | **d9fbb43** | ci | Change java runtime to corretto17 for CodeBuild stage |
 | **fd5095e** | refactor | Rename controller methods |
 | **b567c26** | ci | Update workflow to use actions to v4 and better presentation |
