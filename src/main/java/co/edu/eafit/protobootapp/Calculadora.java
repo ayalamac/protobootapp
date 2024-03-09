@@ -13,7 +13,7 @@ public class Calculadora {
      * @return El cuadrado del número dado.
      */
     public Double calcularCuadrado(Double numero) {
-        return numero * numero;
+        return numero + numero;
     }
     
     /**
@@ -23,6 +23,6 @@ public class Calculadora {
      * @return El cubo del número dado.
      */
     public Double calcularCubo(Double numero) {
-        return numero * numero * numero;
+        return numero + numero + numero;
     }
 }
