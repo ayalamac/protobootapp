@@ -1,5 +1,6 @@
 # Aplicación de Demostración
 
+| **78e28bc** | ci | Change pipeline to automatically update the README file |
 ## Descripción
 Esta es una aplicación de demostración en Java que muestra un punto de conexión "Hola" y otros para mostrar un proceso de integración continua a través de diferentes proveedores como AWS CodeBuild (con el archivo buildspec.yml), Github Actions (con el directorio .github/workflows) y pronto también en Jenkins de manera local, construyendo en la sesión un Jenkinsfile .
 
