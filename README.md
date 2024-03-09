@@ -7,6 +7,7 @@ Esta es una aplicación de demostración en Java que muestra un punto de conexi�
 
 | Commit ID  | Tipo     | Descripción                                               |
 |------------|----------|-----------------------------------------------------------|
+| **04d56be** | ci | Update table start line number and fix previous auto-update in README |
 | **78e28bc** | ci | Change pipeline to automatically update the README file |
 | **74086bd**    | docs      | Add basic README file to introduce the project           |
 | **e596df0**    | mix      | Add several changes to code base                          |
