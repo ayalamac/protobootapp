@@ -7,6 +7,7 @@ Esta es una aplicación de demostración en Java que muestra un punto de conexi�
 
 | Commit ID   | Tipo     | Descripción                                               |
 |-------------|----------|-----------------------------------------------------------|
+| **b567c26** | ci | Update workflow to use actions to v4 and better presentation |
 | **225f978** | test | Update assertions to ignore localization |
 | **4e45a18** | docs | Update README, adding Dependencies and Build steps included in POM file |
 | **04d56be** | ci | Update table start line number and fix previous auto-update in README |
