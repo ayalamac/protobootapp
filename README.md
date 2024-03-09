@@ -7,7 +7,7 @@ Esta es una aplicación de demostración en Java que muestra un punto de conexi�
 
 | Commit ID   | Tipo     | Descripción                                               |
 |-------------|----------|-----------------------------------------------------------|
-| **4cddcd5** | test | Update assertions to ignore localization |
+| **225f978** | test | Update assertions to ignore localization |
 | **4e45a18** | docs | Update README, adding Dependencies and Build steps included in POM file |
 | **04d56be** | ci | Update table start line number and fix previous auto-update in README |
 | **78e28bc** | ci | Change pipeline to automatically update the README file |
