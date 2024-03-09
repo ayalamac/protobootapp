@@ -34,13 +34,13 @@ public class ProtobootappApplication {
     @GetMapping("/cuadrado")
     public String cuadrado(@RequestParam(value = "numero", defaultValue = "0") Double numero) {
         this.calculadora = new Calculadora();
-        return String.format("El cuadrado de %f es %f", numero, this.calculadora.cuadrado(numero));
+        return String.format("El cuadrado de %f es %f", numero, this.calculadora.calcularCuadrado(numero));
     }
     
     //Se ejecuta con http://localhost:8080/cubo o http://localhost:8080/cubo?numero=5
     @GetMapping("/cubo")
     public String cubo(@RequestParam(value = "numero", defaultValue = "0") Double numero) {
         this.calculadora = new Calculadora();
-        return String.format("El cubo de %f es %f", numero, this.calculadora.cubo(numero));
+        return String.format("El cubo de %f es %f", numero, this.calculadora.calcularCubo(numero));
     }
 }
