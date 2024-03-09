@@ -22,7 +22,7 @@ class HttpRequestTest {
     @Test
     void GetHolaEndpoint_WhenIsCalledWithoutParamNombre_ShouldReturnHolaMundo() {
         String response = restTemplate.getForObject("http://localhost:" + port + "/hola", String.class);
-        assertThat(response).isEqualTo("Mundo!");
+        assertThat(response).isEqualTo("Hola Mundo!");
     }
 
     @Test
@@ -40,12 +40,12 @@ class HttpRequestTest {
     @Test
     void GetCuboEndpoint_WhenIsCalledWithoutNumber_ShouldReturnDefaultCube() {
         String response = restTemplate.getForObject("http://localhost:" + port + "/cubo", String.class);
-        assertThat(response).matches("0[,.]0 es 0[,.]0");
+        assertThat(response).matches("El cubo de 0[,.]0 es 0[,.]0");
     }
 
     @Test
     void GetCuboEndpoint_WhenIsCalledWithNumber_ShouldReturnCubeOfNumber() {
         String response = restTemplate.getForObject("http://localhost:" + port + "/cubo?numero=3", String.class);
-        assertThat(response).matches("3[,.]0 es 27[,.]0");
+        assertThat(response).matches("El cubo de 3[,.]0 es 27[,.]0");
     }
 }
