@@ -3,61 +3,58 @@ package co.edu.eafit.protobootapp;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-//Pruebas unitarias del proyecto
-public class TestCalculadora {
+class TestCalculadora {
 
-    //Pruebas unitarias para el cuadrado
     @Test
-    public void testCuadradoPositivo() {
+    void calculateCuadrado_WhenInputIs5_ShouldReturn25() {
         Calculadora calc = new Calculadora();
         assertEquals(25.0, calc.calcularCuadrado(5.0), 0);
     }
 
     @Test
-    public void testCuadradoCero() {
+    void calculateCuadrado_WhenInputIsZero_ShouldReturnZero() {
         Calculadora calc = new Calculadora();
         assertEquals(0.0, calc.calcularCuadrado(0.0), 0);
     }
 
     @Test
-    public void testCuadradoUno() {
+    void calculateCuadrado_WhenInputIsOne_ShouldReturnOne() {
         Calculadora calc = new Calculadora();
         assertEquals(1.0, calc.calcularCuadrado(1.0), 0);
     }
 
     @Test
-    public void testCuadradoNegativo() {
+    void calculateCuadrado_WhenInputIsNegative_ShouldReturnPositiveValue() {
         Calculadora calc = new Calculadora();
         assertEquals(16.0, calc.calcularCuadrado(-4.0), 0);
     }
-    
-    //Pruebas unitarias para el cubo
+
     @Test
-    public void testCuboPositivo() {
+    void calculateCubo_WhenInputIs5_ShouldReturn125() {
         Calculadora calc = new Calculadora();
         assertEquals(125.0, calc.calcularCubo(5.0), 0);
     }
 
     @Test
-    public void testCuboCero() {
+    void calculateCubo_WhenInputIsZero_ShouldReturnZero() {
         Calculadora calc = new Calculadora();
         assertEquals(0.0, calc.calcularCubo(0.0), 0);
     }
 
     @Test
-    public void testCuboUno() {
+    void calculateCubo_WhenInputIsOne_ShouldReturnOne() {
         Calculadora calc = new Calculadora();
         assertEquals(1.0, calc.calcularCubo(1.0), 0);
     }
-    
+
     @Test
-    public void testCuboMenosUno() {
+    void calculateCubo_WhenInputIsNegativeOne_ShouldReturnNegativeOne() {
         Calculadora calc = new Calculadora();
         assertEquals(-1.0, calc.calcularCubo(-1.0), 0);
     }
 
     @Test
-    public void testCuboNegativo() {
+    void calculateCubo_WhenInputIsNegative_ShouldReturnNegativeValue() {
         Calculadora calc = new Calculadora();
         assertEquals(-64.0, calc.calcularCubo(-4.0), 0);
     }

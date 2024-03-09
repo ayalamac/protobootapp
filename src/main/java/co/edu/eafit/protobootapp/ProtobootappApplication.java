@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-//App para hallar el cuadrado y el cubo de un número
+//Aplicación para hallar el cuadrado y el cubo de un número
 //Se lanza y se ejecuta con http://localhost:8080 o la URL específica al proveedor cloud
 @SpringBootApplication
 @RestController
@@ -19,22 +19,22 @@ public class ProtobootappApplication {
     }
 
     /**
-     * This method returns a welcome message for the application.
-     * It is executed with the URL http://localhost:8080/
+     * Este método devuelve un mensaje de bienvenida para la aplicación.
+     * Se ejecuta con la URL http://localhost:8080/
      *
-     * @return The welcome message.
+     * @return El mensaje de bienvenida.
      */
     @GetMapping("/")
     public String index() {
-        return String.format("Bienvenido! Esta aplicación ayuda a elevar números a sus potencias.");
+        return "Bienvenido! Esta aplicación ayuda a elevar números a sus potencias.";
     }    
 
     /**
-     * This method returns a greeting message with the given name.
-     * It is executed with the URL http://localhost:8080/hola or http://localhost:8080/hola?nombre=John
+     * Este método devuelve un mensaje de saludo con el nombre dado.
+     * Se ejecuta con la URL http://localhost:8080/hola o http://localhost:8080/hola?nombre=John
      *
-     * @param nombre The name to include in the greeting message.
-     * @return The greeting message.
+     * @param nombre El nombre a incluir en el mensaje de saludo.
+     * @return El mensaje de saludo.
      */
     @GetMapping("/hola")
     public String hola(@RequestParam(value = "nombre", defaultValue = "Mundo") String nombre) {
@@ -42,28 +42,30 @@ public class ProtobootappApplication {
     }
     
     /**
-     * This method calculates and returns the square of the given number.
-     * It is executed with the URL http://localhost:8080/cuadrado or http://localhost:8080/cuadrado?numero=5
+     * Este método calcula y devuelve el cuadrado del número dado.
+     * Se ejecuta con la URL http://localhost:8080/cuadrado o http://localhost:8080/cuadrado?numero=5
      *
-     * @param numero The number to calculate the square of.
-     * @return The square of the given number.
+     * @param numero El número para calcular su cuadrado.
+     * @return El cuadrado del número dado.
      */
     @GetMapping("/cuadrado")
     public String cuadrado(@RequestParam(value = "numero", defaultValue = "0") Double numero) {
         this.calculadora = new Calculadora();
-        return String.format("El cuadrado de %f es %f", numero, this.calculadora.calcularCuadrado(numero));
+        double resultado = this.calculadora.calcularCuadrado(numero);
+        return String.format("El cuadrado de %.1f es %.1f", numero, resultado);
     }
     
     /**
-     * This method calculates and returns the cube of the given number.
-     * It is executed with the URL http://localhost:8080/cubo or http://localhost:8080/cubo?numero=5
+     * Este método calcula y devuelve el cubo del número dado.
+     * Se ejecuta con la URL http://localhost:8080/cubo o http://localhost:8080/cubo?numero=5
      *
-     * @param numero The number to calculate the cube of.
-     * @return The cube of the given number.
+     * @param numero El número para calcular su cubo.
+     * @return El cubo del número dado.
      */
     @GetMapping("/cubo")
     public String cubo(@RequestParam(value = "numero", defaultValue = "0") Double numero) {
         this.calculadora = new Calculadora();
-        return String.format("El cubo de %f es %f", numero, this.calculadora.calcularCubo(numero));
+        double resultado = this.calculadora.calcularCubo(numero);
+        return String.format("El cubo de %.1f es %.1f", numero, resultado);
     }
 }
