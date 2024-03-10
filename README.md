@@ -7,6 +7,7 @@ Esta es una aplicación de demostración en Java que muestra un punto de conexi�
 ## Registro de cambios después del *fork* al proyecto original
 | Commit ID   | Tipo     | Descripción                                               |
 |-------------|----------|-----------------------------------------------------------|
+| **63d72d3** | docs | Update README with new title and adding Workflow Status Badge |
 | **e060134** | test | Disable 'mvn test' command |
 | **17bf152** | test | Revert changes in code coverage limit |
 | **a22faa9** | chore | Add Spring Boot Actuator features |
