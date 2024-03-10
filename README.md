@@ -1,10 +1,10 @@
-# Aplicación de Demostración
+# ProtoBootApp: Aplicación de Demo de Pipeline CI/CD
+[![Java CI Demo in GitHub Actions](https://github.com/ayalamac/protobootapp/actions/workflows/maven.yml/badge.svg?branch=master)](https://github.com/ayalamac/protobootapp/actions/workflows/maven.yml)
 
 ## Descripción
 Esta es una aplicación de demostración en Java que muestra un punto de conexión "Hola" y otros para mostrar un proceso de integración continua a través de diferentes proveedores como AWS CodeBuild (con el archivo buildspec.yml), Github Actions (con el directorio .github/workflows) y pronto también en Jenkins de manera local, construyendo en la sesión un Jenkinsfile .
 
 ## Registro de cambios después del *fork* al proyecto original
-
 | Commit ID   | Tipo     | Descripción                                               |
 |-------------|----------|-----------------------------------------------------------|
 | **e060134** | test | Disable 'mvn test' command |
