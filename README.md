@@ -39,9 +39,13 @@ Esta es una aplicación de demostración en Java que muestra un punto de conexi�
 1. Ejecutar la aplicación: En tu IDE haz *clic* en el ícono de ejecutar. En la mayoría de IDEs, `CTRL + F5` también ejecutan la aplicación
 2. Abrir el navegador y navegar a [http://localhost:8081](http://localhost:8081) o, el puerto que esté definido en la propiedad `server.port` del archivo `src/main/resources/application.properties`
 
+## Test de ejecución en Jenkins con webhook
+
+Agregamos cambios para realizar las pruebas del webhook.
+
 ## Configuración del Proyecto - POM.xml
 
-El archivo `pom.xml` es el núcleo de cualquier proyecto Maven. Incluye los detalles de configuración sobre el proyecto y sus dependencias.
+El archivo `pom.xml` es el núcleo de cualquier proyecto Maven. Incluye los detalles de configuración sobre el proyecto y sus dependencies.
 
 ### Dependencias
 
