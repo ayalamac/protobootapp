@@ -41,7 +41,7 @@ Esta es una aplicación de demostración en Java que muestra un punto de conexi�
 
 ## Test de ejecución en Jenkins con webhook
 
-Agregamos cambios para realizar las pruebas del webhook..
+Agregamos cambios para realizar las pruebas del webhook...
 
 ## Configuración del Proyecto - POM.xml
 
